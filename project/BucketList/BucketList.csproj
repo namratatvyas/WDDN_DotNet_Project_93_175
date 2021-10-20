@@ -1,0 +1,393 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A4CE88F-7F2E-4C99-BE90-9A9C1EEF37AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BucketList</RootNamespace>
+    <AssemblyName>BucketList</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44384</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="ahm.aspx" />
+    <Content Include="contact-us.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\detaildesign.css" />
+    <Content Include="css\style.css" />
+    <Content Include="details.aspx" />
+    <Content Include="DetailsForm.aspx" />
+    <Content Include="fonts\fl-bigmug-line.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\lg.svg" />
+    <Content Include="fonts\materialdesignicons-webfont.svg" />
+    <Content Include="css\formdetails.css" />
+    <Content Include="images\ahmedabad\adalaj1.jpg" />
+    <Content Include="images\ahmedabad\adalaj2.jpg" />
+    <Content Include="images\ahmedabad\adalaj3.jpg" />
+    <Content Include="images\ahmedabad\kankaria1.jpg" />
+    <Content Include="images\ahmedabad\kankaria2.jpg" />
+    <Content Include="images\ahmedabad\kankaria3.jpg" />
+    <Content Include="images\ahmedabad\law1.jpg" />
+    <Content Include="images\ahmedabad\law2.jpg" />
+    <Content Include="images\ahmedabad\law3.jpg" />
+    <Content Include="images\ahmedabad\river1.jpg" />
+    <Content Include="images\ahmedabad\river2.jpg" />
+    <Content Include="images\ahmedabad\river3.jpg" />
+    <Content Include="images\ahmedabad\sabarmati1.jpg" />
+    <Content Include="images\ahmedabad\sabarmati2.jpg" />
+    <Content Include="images\ahmedabad\sabarmati3.jpg" />
+    <Content Include="images\ahmedabad\sidi1.jpg" />
+    <Content Include="images\ahmedabad\sidi2.jpg" />
+    <Content Include="images\ahmedabad\sidi3.jpg" />
+    <Content Include="images\Ahmedabad_hotels\carrefour1.jpg" />
+    <Content Include="images\Ahmedabad_hotels\carrefour2.jpg" />
+    <Content Include="images\Ahmedabad_hotels\carrefour3.jpg" />
+    <Content Include="images\Ahmedabad_hotels\carrefour4.jpg" />
+    <Content Include="images\Ahmedabad_hotels\marigold1.jpg" />
+    <Content Include="images\Ahmedabad_hotels\marigold2.jpg" />
+    <Content Include="images\Ahmedabad_hotels\marigold3.jpg" />
+    <Content Include="images\Ahmedabad_hotels\marigold4.jpg" />
+    <Content Include="images\Ahmedabad_hotels\skyline1.jpg" />
+    <Content Include="images\Ahmedabad_hotels\skyline2.jpg" />
+    <Content Include="images\Ahmedabad_hotels\skyline3.jpg" />
+    <Content Include="images\Ahmedabad_hotels\skyline4.jpg" />
+    <Content Include="images\Ahmedabad_hotels\treat1.jpg" />
+    <Content Include="images\Ahmedabad_hotels\treat2.jpg" />
+    <Content Include="images\Ahmedabad_hotels\treat3.JPG" />
+    <Content Include="images\Ahmedabad_hotels\treat4.jpg" />
+    <Content Include="images\ahmedabad_res\global1.jpg" />
+    <Content Include="images\ahmedabad_res\global2.jpg" />
+    <Content Include="images\ahmedabad_res\global3.jpg" />
+    <Content Include="images\ahmedabad_res\global4.jpg" />
+    <Content Include="images\ahmedabad_res\green1.jpg" />
+    <Content Include="images\ahmedabad_res\green2.jpg" />
+    <Content Include="images\ahmedabad_res\green3.jpg" />
+    <Content Include="images\ahmedabad_res\green4.jpg" />
+    <Content Include="images\ahmedabad_res\rajwadu1.jpg" />
+    <Content Include="images\ahmedabad_res\rajwadu2.jpg" />
+    <Content Include="images\ahmedabad_res\rajwadu3.jpg" />
+    <Content Include="images\ahmedabad_res\rajwadu4.jpg" />
+    <Content Include="images\ahmedabad_res\swati1.jpg" />
+    <Content Include="images\ahmedabad_res\swati2.jpg" />
+    <Content Include="images\ahmedabad_res\swati3.jpg" />
+    <Content Include="images\ahmedabad_res\swati4.jpg" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\gmap_marker.png" />
+    <Content Include="images\gmap_marker_active.png" />
+    <Content Include="images\Jaipur\amber1.jpg" />
+    <Content Include="images\Jaipur\amber2.jpg" />
+    <Content Include="images\Jaipur\amber3.jpg" />
+    <Content Include="images\Jaipur\diwan1.jpg" />
+    <Content Include="images\Jaipur\diwan2.jpg" />
+    <Content Include="images\Jaipur\diwan3.jpg" />
+    <Content Include="images\Jaipur\ganpati1.jpg" />
+    <Content Include="images\Jaipur\ganpati2.jpg" />
+    <Content Include="images\Jaipur\ganpati3.jpg" />
+    <Content Include="images\Jaipur\hawa1.jpg" />
+    <Content Include="images\Jaipur\hawa2.jpg" />
+    <Content Include="images\Jaipur\hawa3.jpg" />
+    <Content Include="images\Jaipur\jantar1.jpg" />
+    <Content Include="images\Jaipur\jantar2.jpg" />
+    <Content Include="images\Jaipur\jantar3.jpg" />
+    <Content Include="images\Jaipur\lake1.jpg" />
+    <Content Include="images\Jaipur\lake2.jpg" />
+    <Content Include="images\Jaipur\lake3.jpg" />
+    <Content Include="images\Jaipur_hotels\dodas1.jpg" />
+    <Content Include="images\Jaipur_hotels\dodas2.jpg" />
+    <Content Include="images\Jaipur_hotels\dodas3.jpg" />
+    <Content Include="images\Jaipur_hotels\dodas4.jpg" />
+    <Content Include="images\Jaipur_hotels\lalit1.jpg" />
+    <Content Include="images\Jaipur_hotels\lalit2.jpg" />
+    <Content Include="images\Jaipur_hotels\lalit3.jpg" />
+    <Content Include="images\Jaipur_hotels\lalit4.jpg" />
+    <Content Include="images\Jaipur_hotels\rpalace1.jpg" />
+    <Content Include="images\Jaipur_hotels\rpalace2.jpg" />
+    <Content Include="images\Jaipur_hotels\rpalace3.jpg" />
+    <Content Include="images\Jaipur_hotels\rpalace4.jpg" />
+    <Content Include="images\Jaipur_hotels\sarang1.jpg" />
+    <Content Include="images\Jaipur_hotels\sarang2.jpg" />
+    <Content Include="images\Jaipur_hotels\sarang3.jpg" />
+    <Content Include="images\Jaipur_hotels\sarang4.jpg" />
+    <Content Include="images\Jaipur_res\chhabra1.jpg" />
+    <Content Include="images\Jaipur_res\chhabra2.jpg" />
+    <Content Include="images\Jaipur_res\chhabra3.jpg" />
+    <Content Include="images\Jaipur_res\chhabra4.jpg" />
+    <Content Include="images\Jaipur_res\dana1.jpg" />
+    <Content Include="images\Jaipur_res\dana2.jpg" />
+    <Content Include="images\Jaipur_res\dana3.jpg" />
+    <Content Include="images\Jaipur_res\dana4.jpg" />
+    <Content Include="images\Jaipur_res\kalyan1.jpg" />
+    <Content Include="images\Jaipur_res\kalyan2.jpg" />
+    <Content Include="images\Jaipur_res\kalyan3.jpg" />
+    <Content Include="images\Jaipur_res\kalyan4.jpg" />
+    <Content Include="images\Jaipur_res\natraj1.jpg" />
+    <Content Include="images\Jaipur_res\natraj2.jpg" />
+    <Content Include="images\Jaipur_res\natraj3.jpg" />
+    <Content Include="images\Jaipur_res\natraj4.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpeg" />
+    <Content Include="images\Mumbai_Hotels\dormitory1.jpg" />
+    <Content Include="images\Mumbai_Hotels\dormitory2.jpg" />
+    <Content Include="images\Mumbai_Hotels\dormitory3.jpg" />
+    <Content Include="images\Mumbai_Hotels\dormitory4.jpg" />
+    <Content Include="images\Mumbai_Hotels\ginger1.jpg" />
+    <Content Include="images\Mumbai_Hotels\ginger2.jpg" />
+    <Content Include="images\Mumbai_Hotels\ginger3.jpg" />
+    <Content Include="images\Mumbai_Hotels\ginger4.jpg" />
+    <Content Include="images\Mumbai_Hotels\milan1.jpg" />
+    <Content Include="images\Mumbai_Hotels\milan2.jpg" />
+    <Content Include="images\Mumbai_Hotels\milan3.jpg" />
+    <Content Include="images\Mumbai_Hotels\milan4.jpg" />
+    <Content Include="images\Mumbai_Hotels\orchid1.jpg" />
+    <Content Include="images\Mumbai_Hotels\orchid2.jpg" />
+    <Content Include="images\Mumbai_Hotels\orchid3.jpg" />
+    <Content Include="images\Mumbai_Hotels\orchid4.jpg" />
+    <Content Include="images\Mumbai_res\earth1.jpg" />
+    <Content Include="images\Mumbai_res\earth2.jpg" />
+    <Content Include="images\Mumbai_res\earth3.jpg" />
+    <Content Include="images\Mumbai_res\earth4.jpg" />
+    <Content Include="images\Mumbai_res\kebabs1.jpg" />
+    <Content Include="images\Mumbai_res\kebabs2.jpg" />
+    <Content Include="images\Mumbai_res\kebabs3.jpg" />
+    <Content Include="images\Mumbai_res\kebabs4.jpg" />
+    <Content Include="images\Mumbai_res\shakey1.jpg" />
+    <Content Include="images\Mumbai_res\shakey2.jpg" />
+    <Content Include="images\Mumbai_res\shakey3.jpg" />
+    <Content Include="images\Mumbai_res\shakey4.jpg" />
+    <Content Include="images\Mumbai_res\vedge1.jpg" />
+    <Content Include="images\Mumbai_res\vedge2.jpg" />
+    <Content Include="images\Mumbai_res\vedge3.jpg" />
+    <Content Include="images\Mumbai_res\vedge4.jpg" />
+    <Content Include="images\preloader.gif" />
+    <Content Include="images\_blank.png" />
+    <Content Include="index.aspx" />
+    <Content Include="jaipur.aspx" />
+    <Content Include="js\core.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="mumbai.aspx" />
+    <Content Include="Mumbai\colaba1.jpg" />
+    <Content Include="Mumbai\colaba2.jpg" />
+    <Content Include="Mumbai\colaba3.jpg" />
+    <Content Include="Mumbai\CSMTerminus.jpg" />
+    <Content Include="Mumbai\CSMTerminus1.jpg" />
+    <Content Include="Mumbai\CSMTerminus2.jpg" />
+    <Content Include="Mumbai\elephantcave1.jpg" />
+    <Content Include="Mumbai\elephantcave2.jpg" />
+    <Content Include="Mumbai\elephantcave3.jpg" />
+    <Content Include="Mumbai\Gateway1.jpg" />
+    <Content Include="Mumbai\Gateway2.jpg" />
+    <Content Include="Mumbai\Gateway3.jpg" />
+    <Content Include="Mumbai\hajiali1.jpg" />
+    <Content Include="Mumbai\hajiali2.jpg" />
+    <Content Include="Mumbai\hajiali3.jpg" />
+    <Content Include="Mumbai\juhu1.jpg" />
+    <Content Include="Mumbai\juhu2.jpg" />
+    <Content Include="Mumbai\marinedrive1.jpg" />
+    <Content Include="Mumbai\marinedrive2.jpg" />
+    <Content Include="Mumbai\marinedrive3.jpg" />
+    <Content Include="Mumbai\nehrupark1.jpg" />
+    <Content Include="Mumbai\nehrupark2.jpg" />
+    <Content Include="Mumbai\nehrupark3.jpg" />
+    <Content Include="Mumbai\powai1.jpg" />
+    <Content Include="Mumbai\powai2.jpg" />
+    <Content Include="Mumbai\powai3.jpg" />
+    <Content Include="Mumbai\siddhivinayak1.jpg" />
+    <Content Include="Mumbai\siddhivinayak2.jpg" />
+    <Content Include="TourDesk.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ahm.aspx.cs">
+      <DependentUpon>ahm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ahm.aspx.designer.cs">
+      <DependentUpon>ahm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us.aspx.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us.aspx.designer.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsForm.aspx.cs">
+      <DependentUpon>DetailsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailsForm.aspx.designer.cs">
+      <DependentUpon>DetailsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jaipur.aspx.cs">
+      <DependentUpon>jaipur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jaipur.aspx.designer.cs">
+      <DependentUpon>jaipur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mumbai.aspx.cs">
+      <DependentUpon>mumbai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mumbai.aspx.designer.cs">
+      <DependentUpon>mumbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TourDesk.aspx.cs">
+      <DependentUpon>TourDesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourDesk.aspx.designer.cs">
+      <DependentUpon>TourDesk.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fl-bigmug-line.eot" />
+    <Content Include="fonts\fl-bigmug-line.ttf" />
+    <Content Include="fonts\fl-bigmug-line.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\lg.eot" />
+    <Content Include="fonts\lg.ttf" />
+    <Content Include="fonts\lg.woff" />
+    <Content Include="fonts\materialdesignicons-webfont.eot" />
+    <Content Include="fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="fonts\materialdesignicons-webfont.woff" />
+    <Content Include="fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="fonts\MaterialIcons-Regular.eot" />
+    <Content Include="fonts\MaterialIcons-Regular.ijmap" />
+    <Content Include="fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="fonts\MaterialIcons-Regular.woff" />
+    <Content Include="fonts\MaterialIcons-Regular.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65240</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44384/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
